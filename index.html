@@ -34,7 +34,29 @@
         <button type="submit">Submit</button>
     </form>
 
-    <div id="result"></div>
+    <div id="alreadyTaken" class="already-taken">
+        You have already taken the quiz! 🎉
+    </div>
+</div>
+
+<!-- Winner popup -->
+<div id="winnerPopup" class="popup">
+    <div class="popup-content">
+        <h2>🎉 Perfect Score! 🎉</h2>
+        <p>Congrats! You got 5/5 🏆</p>
+        <p>Send me a DM to claim your birthday reward! 💰</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<!-- Loser popup -->
+<div id="loserPopup" class="popup">
+    <div class="popup-content">
+        <h2>😢 Sorry!</h2>
+        <p>You didn’t get a perfect score this time.</p>
+        <p>Don’t worry, keep trying or just DM me to celebrate my birthday! 🎂</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
 </div>
 
 <script src="script.js"></script>
